@@ -1,3 +1,5 @@
+![pocket](./img/Pocket.png "pocket")
+
 # firefox pocket关闭服务器
 - 2025 年 5 月 22 日禁止商店新用户下载app
   - 2025 年 7 月 8 日服务终止,2025 年 10 月 8日前可登录导出,之后，所有用户数据将被永久删除
@@ -15,7 +17,8 @@
 # 预览
 
 
-![预览1](./index.png "Screenshot")
+![预览1](./img/index.png "Screenshot")
 
-![预览2](./csv_processor.png "Screenshot")
+![预览2](./img/csv_processor.png "Screenshot")
+
 
