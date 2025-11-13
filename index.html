@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的静态收藏列表 - GitHub橙色导航条风格</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>
+        <img src="./img/Pocket.png" 
+             style="height: 1.5em; vertical-align: middle; margin-right: 4px;"> 
+        Pocket存档
+    </h1>
+</header>
+
+    <div class="container">
+
+   <div class="nav-container">
+        </div>
+
+    <div class="segmented-control-container">
+        <a class="segmented-control-item selected" aria-current="page" href="index.html">收藏列表</a>
+        
+        <a class="segmented-control-item" href="csv_processor.html">CSV处理</a>
+    </div>
+<div class="nav-container">
+    <ul class="nav-list" id="mainTabs">
+
+        <li class="nav-item">
+            <a href="#" class="nav-link active" data-filter-type="status" data-filter-value="all">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#A9C3C8"><path d="M259.39-95.02q-28.09 0-50.2-18.14-22.11-18.15-26.1-46.45l-64.52-386.13q-3.24-18.27 8.05-31.95 11.29-13.68 29.1-13.68h648.56q18.06 0 29.22 13.84 11.17 13.83 8.93 31.79l-64.52 386.13q-4.99 28.3-27.1 46.45-22.11 18.14-48.96 18.14H259.39Zm-55.04-419.05 53.97 341.5h444.53l54.04-341.5H204.35ZM400-350.83h160q16.06 0 27.61-10.97 11.54-10.98 11.54-27.41 0-16.19-11.54-27.68-11.55-11.48-27.61-11.48H400q-15.86 0-27.01 11.66-11.14 11.65-11.14 27.88 0 16.05 11.14 27.03 11.15 10.97 27.01 10.97ZM240-651.37q-15.86 0-27.01-11.03-11.14-11.02-11.14-27.24 0-15.97 11.14-27.5 11.15-11.53 27.01-11.53h480q16.06 0 27.61 11.65 11.54 11.66 11.54 27.88 0 15.72-11.54 26.74-11.55 11.03-27.61 11.03H240Zm80-137.3q-15.86 0-27.01-11.15-11.14-11.15-11.14-27.12 0-15.98 11.14-27.63 11.15-11.65 27.01-11.65h320q16.06 0 27.61 11.78 11.54 11.77 11.54 28 0 15.47-11.54 26.62-11.55 11.15-27.61 11.15H320Zm-51.7 616.1h444.46H268.3Z"/></svg>
+                所有收藏
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a href="#" class="nav-link" data-filter-type="status" data-filter-value="unread">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#A9C3C8"><path d="M150-138q-37.17 0-64.09-27.61Q59-193.22 59-229v-502q0-36.19 26.91-64.09Q112.83-823 150-823h362q20.92 0 32.96 14T556-774q-1 18-13.84 30.5Q529.33-731 510-731H150v502h660v-291q0-18.38 13.56-31.69Q837.12-565 855.77-565q20.05 0 33.14 13.31T902-520v291q0 35.78-27.21 63.39Q847.59-138 810-138H150Zm0-593v502-502Zm330 218 123-83q14-9 26.01-5.14 12 3.87 20.46 13.75Q656-577 655-563.5T640-541l-135 90q-10.69 10-24.84 9-14.16-1-25.16-9L150-652v-79l330 218Zm279.65-122q-53.15 0-88.9-36.1Q635-707.21 635-760.35q0-53.15 36.1-89.4Q707.21-886 760.35-886q53.15 0 89.4 36.85Q886-812.29 886-759.65q0 53.15-36.85 88.9Q812.29-635 759.65-635Z"/></svg>
+                未读 (Unread)
+            </a>
+        </li>
+        
+        <li class="nav-item">
+            <a href="#" class="nav-link" data-filter-type="status" data-filter-value="archive">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#A9C3C8"><path d="M479.63-572q-15.25 0-26.44 11.45Q442-549.1 442-534v127l-48-48q-11.09-10-25.54-9.5-14.46.5-25.96 11.86Q331-441.29 332-426.8t11 24.8l105 104q11.82 14 31.23 14T512-298l106-105q11-11.38 10.5-25.69T616.64-455q-10.67-10-24.63-10-13.97 0-25.01 10l-48 48v-127q0-15.1-11.84-26.55Q495.31-572 479.63-572ZM190-641v451h580v-451H190Zm1 542q-37.75 0-64.87-27.1Q99-153.2 99-192v-490q0-14.63 5-29.43 5-14.81 15-27.57l73-92q11.75-15.14 29.49-23.07Q239.24-862 259-862h443q18.38 0 35.81 7.98Q755.24-846.03 767-831l76 92q8 13.28 13.5 28.32Q862-695.63 862-681v489q0 38.8-27.42 65.9Q807.16-99 769-99H191Zm33-626h512l-36.41-46H258.45L224-725Zm256 309Z"/></svg>
+                归档 (Archive)
+            </a>
+        </li>
+
+        <li class="nav-item tags-dropdown-container">
+            <a href="#" class="nav-link tag-master-tab" data-filter-type="tag" data-filter-value="all">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#A9C3C8"><path d="M150-139q-37.8 0-64.4-26.6Q59-192.2 59-230v-500q0-38.21 26.6-65.11Q112.2-822 150-822h453q21.48 0 40.56 9.98Q662.64-802.03 677-785l185 250q18 24.68 18 54.84Q880-450 862-426L678-176q-14.36 18.03-33.44 27.52Q625.48-139 604-139H150Zm-1-90h455.84L790-480.5 604.84-732H149v503Zm321-251Z"/></svg>
+                所有标签
+                <span id="tags-count-badge" class="nav-count-badge"></span>
+            </a>
+            
+            <div class="tags-dropdown-content" id="tagsDropdownContent">
+                </div>
+        </li>
+    </ul>
+</div>
+        
+        <div class="data-content">
+            <table id="dataTable">
+    <colgroup>
+        <col class="col-title">
+        <col style="width: 120px;">
+        <col style="width: 180px;">
+        <col style="width: 80px;">
+    </colgroup>
+    <thead>
+        <tr>
+            <th class="col-title" style="padding-left: 0;">标题</th>
+            <th class="col-time">添加时间</th>
+            <th class="col-tags">标签</th>
+            <th class="col-status">状态</th>
+        </tr>
+    </thead>
+    <tbody id="tableBody">
+        </tbody>
+</table>
+        </div>
+
+    </div>
+
+
+
+    <script src="script.js"></script> 
+</body>
+</html>
